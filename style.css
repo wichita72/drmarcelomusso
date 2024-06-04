@@ -112,6 +112,48 @@ img.derecha {
     margin-top: 15px;
 }
 
+.contenedor{
+    width: 100%;
+    max-width: 120em;
+}
+.contenedor .ul{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.contenedor .li{
+    background-color:rgb(21, 73, 21) ;
+    padding: 1em;
+    border-radius: 1rem;
+    margin: 0 1em 1em 0;
+    transition: all .5s ease;
+}
+.contenedor .li.activo{
+    background-color: lightblue;
+    color:rgba(0, 0, 0, 0.85);
+    font-size: small;
+    font-weight: bold;
+}
+.contenedor .subcontenedor{
+    min-height: 10vh;
+    background-color: rgb(21, 73, 21);
+    position: relative;
+}
+.contenedor .bloque{
+    background-color: rgb(21, 73, 21);
+    margin: 1em;
+    padding: 1em;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.contenedor .bloque.activo{
+    opacity: 1;
+}
+
 #consulta {
     background-color:rgb(21, 73, 21);
     color: lightblue;
